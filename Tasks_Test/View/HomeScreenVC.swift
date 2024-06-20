@@ -28,5 +28,9 @@ class HomeScreenVC: UIViewController {
         let newsVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "NewsVC") as! NewsVC
         self.navigationController?.pushViewController(newsVC, animated: true)
     }
+    @IBAction func menuBtn(_ sender: Any) {
+        let menuVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MenuVC") as! MenuVC
+        self.navigationController?.pushViewController(menuVC, animated: true)
+    }
     
 }

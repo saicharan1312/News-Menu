@@ -32,5 +32,14 @@ class APIManager {
             }
         }.resume()
     }
+    func getImageData(url: String, closure: @escaping (Data?) -> ()) {
+            if let imageUrl = URL(string: url) {
+                URLSession.shared.dataTask(with: URLRequest(url: imageUrl)) { data, _, _ in
+                    if let imageData = data {
+                        closure(imageData)
+                    }
+                }.resume()
+            }
+    }
 }
 

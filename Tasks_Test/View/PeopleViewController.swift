@@ -28,7 +28,7 @@ extension PeopleViewController {
                 self.birthYear.text = self.peopleObj.peopleData?.birth_year
                 self.genderLabel.text = self.peopleObj.peopleData?.gender
                 self.heightLabel.text = self.peopleObj.peopleData?.height
-                if let date = self.peopleObj.peopleData?.created.stringToDate() {
+                if let date = self.peopleObj.peopleData?.created?.stringToDate() {
                     self.createdLabel.text = "\(date)"
                 }
             }

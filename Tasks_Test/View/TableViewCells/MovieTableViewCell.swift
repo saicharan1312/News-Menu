@@ -24,7 +24,7 @@ class MovieTableViewCell: UITableViewCell {
     func setMovieData(data: Movies){
         self.createdTitle.text = data.created_at
         self.titleLabel.text = data.title
-        for i in data.transcodings {
+        for i in data.transcodings! {
             self.heightLabel.text = "\(i.height)"
             self.idLabel.text = i.id
             self.transTitleLabel.text = i.title

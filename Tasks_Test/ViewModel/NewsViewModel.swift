@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 class NewsViewModel {
-    var newsArr: [Artcle] = []
+    var newsArr: [Article] = []
     func fetchData(complete: @escaping ()->()) {
         APIManager.sharedInstance.fetchDataFromAPI(for: NewsInfo.self, url: dataUrls.newsUrl.rawValue) { data, error in
             if error != nil {
@@ -17,8 +17,8 @@ class NewsViewModel {
                 complete()
             }
             if let dataObtained = data {
-                self.newsArr = dataObtained.articles
-                print(self.newsArr)
+                self.newsArr = dataObtained.articles ?? []
+                //print(self.newsArr )
                 complete()
             }
         }

@@ -29,10 +29,11 @@
 		4EAC74F82C21F40C002290BE /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAC74F72C21F40C002290BE /* MovieTableViewCell.swift */; };
 		4EC7A4F42C233895004189BC /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC7A4F32C233895004189BC /* NewsViewModel.swift */; };
 		4EC7A4F62C233BE5004189BC /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC7A4F52C233BE5004189BC /* NewsTableViewCell.swift */; };
-		4EC7A4F82C233BFD004189BC /* NewsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC7A4F72C233BFD004189BC /* NewsVC.swift */; };
 		4EC7A4FA2C234A26004189BC /* MenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC7A4F92C234A26004189BC /* MenuViewModel.swift */; };
 		4EC7A4FC2C234A38004189BC /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC7A4FB2C234A38004189BC /* MenuVC.swift */; };
 		4EC7A4FE2C234A4B004189BC /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC7A4FD2C234A4B004189BC /* MenuTableViewCell.swift */; };
+		4EC7A5002C23924D004189BC /* NewsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC7A4FF2C23924D004189BC /* NewsVC.swift */; };
+		4EC7A5022C239639004189BC /* NewsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC7A5012C239639004189BC /* NewsDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,10 +80,11 @@
 		4EAC74F72C21F40C002290BE /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 		4EC7A4F32C233895004189BC /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
 		4EC7A4F52C233BE5004189BC /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
-		4EC7A4F72C233BFD004189BC /* NewsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsVC.swift; sourceTree = "<group>"; };
 		4EC7A4F92C234A26004189BC /* MenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewModel.swift; sourceTree = "<group>"; };
 		4EC7A4FB2C234A38004189BC /* MenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
 		4EC7A4FD2C234A4B004189BC /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		4EC7A4FF2C23924D004189BC /* NewsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsVC.swift; sourceTree = "<group>"; };
+		4EC7A5012C239639004189BC /* NewsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,8 +182,9 @@
 				4EAC74E42C21D210002290BE /* UserInfoVC.swift */,
 				4EAC74ED2C21E5F8002290BE /* PeopleViewController.swift */,
 				4EAC74F52C21F3F2002290BE /* MovieVC.swift */,
-				4EC7A4F72C233BFD004189BC /* NewsVC.swift */,
+				4EC7A4FF2C23924D004189BC /* NewsVC.swift */,
 				4EC7A4FB2C234A38004189BC /* MenuVC.swift */,
+				4EC7A5012C239639004189BC /* NewsDetailViewController.swift */,
 				4EAC74EA2C21DB9B002290BE /* TableViewCells */,
 			);
 			path = View;
@@ -360,13 +363,14 @@
 				4EAC74E12C21D08F002290BE /* Constants.swift in Sources */,
 				4EAC74F22C21E7EA002290BE /* PeopleViewModel.swift in Sources */,
 				4EC7A4F62C233BE5004189BC /* NewsTableViewCell.swift in Sources */,
+				4EC7A5022C239639004189BC /* NewsDetailViewController.swift in Sources */,
 				4EC7A4FA2C234A26004189BC /* MenuViewModel.swift in Sources */,
 				4EAC74F82C21F40C002290BE /* MovieTableViewCell.swift in Sources */,
 				4EAC74EC2C21DBB6002290BE /* UserTableViewCell.swift in Sources */,
 				4EAC74DF2C21D081002290BE /* Network Manager.swift in Sources */,
-				4EC7A4F82C233BFD004189BC /* NewsVC.swift in Sources */,
 				4EAC74E72C21D6FE002290BE /* UserInfoViewModel.swift in Sources */,
 				4EAC74F62C21F3F2002290BE /* MovieVC.swift in Sources */,
+				4EC7A5002C23924D004189BC /* NewsVC.swift in Sources */,
 				4EC7A4F42C233895004189BC /* NewsViewModel.swift in Sources */,
 				4EAC74E92C21D787002290BE /* Models.swift in Sources */,
 				4EAC74EE2C21E5F8002290BE /* PeopleViewController.swift in Sources */,
