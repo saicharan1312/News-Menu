@@ -16,6 +16,7 @@ class APIManager {
             print("Invalid URL")
             return
         }
+        
         URLSession.shared.dataTask(with: URLRequest(url: url)) { data, response, error in
             if error != nil {
                 print("Error Page Not Found")
@@ -32,6 +33,8 @@ class APIManager {
             }
         }.resume()
     }
+    
+    
     func getImageData(url: String, closure: @escaping (Data?) -> ()) {
             if let imageUrl = URL(string: url) {
                 URLSession.shared.dataTask(with: URLRequest(url: imageUrl)) { data, _, _ in
@@ -43,3 +46,20 @@ class APIManager {
     }
 }
 
+class APIClient {
+    static let sharedInstance = APIClient()
+    func fetchData<T : Codable>(for: T.Type, url: String) async throws -> T? {
+        if let url = URL(string: url)  {
+            let (data, _) = try await URLSession.shared.data(for: URLRequest(url: url))
+            do {
+                let serverData = try JSONDecoder().decode(T.self, from: data)
+                return serverData
+            }
+            catch {
+                print("Error while decoding data")
+                return nil
+            }
+        }
+        return nil
+    }
+}

@@ -8,7 +8,7 @@
 import UIKit
 
 class MovieTableViewCell: UITableViewCell {
-
+    
     @IBOutlet weak var heightLabel: UILabel!
     @IBOutlet weak var transTitleLabel: UILabel!
     @IBOutlet weak var idLabel: UILabel!
@@ -17,17 +17,21 @@ class MovieTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
     func setMovieData(data: Movies){
         self.createdTitle.text = data.created_at
         self.titleLabel.text = data.title
-        for i in data.transcodings! {
-            self.heightLabel.text = "\(i.height)"
-            self.idLabel.text = i.id
-            self.transTitleLabel.text = i.title
+        if let trans = data.transcodings {
+            for i in trans {
+                if let height = i.height {
+                    self.heightLabel.text = "\(String(describing: height))"
+                }
+                self.idLabel.text = i.id
+                self.transTitleLabel.text = i.title
+            }
         }
     }
 }
