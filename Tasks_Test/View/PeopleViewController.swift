@@ -29,7 +29,7 @@ extension PeopleViewController {
                 self.genderLabel.text = self.peopleObj.peopleData?.gender
                 self.heightLabel.text = self.peopleObj.peopleData?.height
                 if let date = self.peopleObj.peopleData?.created?.stringToDate() {
-                    self.createdLabel.text = "\(date)"
+                    self.createdLabel.text = String("\(date)".prefix(10))
                 }
             }
         }

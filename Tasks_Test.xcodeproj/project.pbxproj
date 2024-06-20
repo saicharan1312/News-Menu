@@ -183,8 +183,8 @@
 				4EAC74ED2C21E5F8002290BE /* PeopleViewController.swift */,
 				4EAC74F52C21F3F2002290BE /* MovieVC.swift */,
 				4EC7A4FF2C23924D004189BC /* NewsVC.swift */,
-				4EC7A4FB2C234A38004189BC /* MenuVC.swift */,
 				4EC7A5012C239639004189BC /* NewsDetailViewController.swift */,
+				4EC7A4FB2C234A38004189BC /* MenuVC.swift */,
 				4EAC74EA2C21DB9B002290BE /* TableViewCells */,
 			);
 			path = View;

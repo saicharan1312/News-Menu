@@ -35,6 +35,9 @@ extension NewsVC: UITableViewDataSource, UITableViewDelegate {
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let detailedNewsVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "NewsDetailViewController") as! NewsDetailViewController
+        self.navigationController?.pushViewController(detailedNewsVC, animated: true)
+        detailedNewsVC.newsDetailObj = newsObj.newsArr[indexPath.row]
         
     }
 }
