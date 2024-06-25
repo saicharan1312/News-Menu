@@ -10,7 +10,7 @@ import UIKit
 
 class APIManager {
     static let sharedInstance = APIManager()
-    private init() {}
+    //private init() {}
     func fetchDataFromAPI<T: Codable>(for: T.Type, url: String, completion:  @escaping (T?,Error?)->()) {
         guard let url = URL(string: url) else {
             print("Invalid URL")
@@ -63,3 +63,36 @@ class APIClient {
         return nil
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

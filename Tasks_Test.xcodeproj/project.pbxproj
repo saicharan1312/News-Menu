@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E52E3C22C29F2A80032E7DB /* MockAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E52E3C12C29F2A80032E7DB /* MockAPIManager.swift */; };
 		4E8A9E0A2C24975300B8031D /* DetailedRecipeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8A9E092C24975300B8031D /* DetailedRecipeVC.swift */; };
 		4E8A9E0C2C24994F00B8031D /* RecipeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8A9E0B2C24994F00B8031D /* RecipeTableViewCell.swift */; };
 		4EAC74AA2C21D01C002290BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAC74A92C21D01C002290BE /* AppDelegate.swift */; };
@@ -56,6 +57,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4E52E3C12C29F2A80032E7DB /* MockAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIManager.swift; sourceTree = "<group>"; };
 		4E8A9E092C24975300B8031D /* DetailedRecipeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedRecipeVC.swift; sourceTree = "<group>"; };
 		4E8A9E0B2C24994F00B8031D /* RecipeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTableViewCell.swift; sourceTree = "<group>"; };
 		4EAC74A62C21D01C002290BE /* Tasks_Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tasks_Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -219,6 +221,7 @@
 			isa = PBXGroup;
 			children = (
 				4EAC74DE2C21D081002290BE /* Network Manager.swift */,
+				4E52E3C12C29F2A80032E7DB /* MockAPIManager.swift */,
 			);
 			path = "Network Manager";
 			sourceTree = "<group>";
@@ -380,6 +383,7 @@
 				4EC7A5002C23924D004189BC /* NewsVC.swift in Sources */,
 				4EC7A4F42C233895004189BC /* NewsViewModel.swift in Sources */,
 				4EAC74E92C21D787002290BE /* Models.swift in Sources */,
+				4E52E3C22C29F2A80032E7DB /* MockAPIManager.swift in Sources */,
 				4E8A9E0C2C24994F00B8031D /* RecipeTableViewCell.swift in Sources */,
 				4EAC74EE2C21E5F8002290BE /* PeopleViewController.swift in Sources */,
 				4EAC74AA2C21D01C002290BE /* AppDelegate.swift in Sources */,

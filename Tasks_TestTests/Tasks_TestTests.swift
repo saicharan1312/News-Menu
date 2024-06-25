@@ -9,28 +9,52 @@ import XCTest
 @testable import Tasks_Test
 
 class Tasks_TestTests: XCTestCase {
-
+    
+    var mockObj: MockAPIManager?
+    var userMockObj: UserInfoViewModel?
+    var peopleMockObj: PeopleViewModel?
+    var movieMockObj: MovieViewModel?
+    var newsMockObj: NewsViewModel?
+    var menuMockObj: MenuViewModel?
+    
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        mockObj = MockAPIManager()
+        userMockObj = UserInfoViewModel()
+        peopleMockObj = PeopleViewModel()
+        movieMockObj = MovieViewModel()
+        newsMockObj = NewsViewModel()
+        menuMockObj = MenuViewModel()
     }
 
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        mockObj = nil
+        userMockObj = nil
+        peopleMockObj = nil
+        movieMockObj = nil
+        newsMockObj = nil
+        menuMockObj = nil
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    func userMockAPITest() throws {
+        userMockObj?.fetchData {}
+        XCTAssertEqual(userMockObj?.usersArr.count, 1)
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func peopleMockAPITest() throws {
+        peopleMockObj?.fetchData {}
+        XCTAssertEqual(peopleMockObj?.peopleData?.name, "Sai")
+        XCTAssertNotNil(peopleMockObj?.peopleData)
+    }
+    func movieMockAPITest() throws {
+        movieMockObj?.fetchData {}
+        XCTAssertEqual(movieMockObj?.movieArr.count, 1)
+    }
+    func newsMockAPITest() throws {
+        newsMockObj?.fetchData {}
+        XCTAssertEqual(newsMockObj?.newsArr.count, 1)
+    }
+    func menuMockAPITest() throws {
+        menuMockObj?.fetchData {}
+        XCTAssertEqual(menuMockObj?.menuArr.count, 1)
     }
 
 }
